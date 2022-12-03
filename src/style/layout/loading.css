@@ -1,0 +1,82 @@
+.loading {
+    display: flex;
+    gap: 100px;
+    width: fit-content;
+    margin: 200px auto;
+
+}
+
+.rows {
+    background-color: rgb(205, 155, 155);
+    height: 200px;
+    width: 50px;
+}
+
+.first-row {
+    animation-name: first-row-animation;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+
+
+}
+
+
+@keyframes first-row-animation {
+    0% {
+        transform: scaleY(0);
+    }
+
+    50% {
+        transform: scaleY(0.5);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+
+
+}
+
+.second-row {
+
+    animation-name: second-row-animation;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes second-row-animation {
+    0% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(0.5);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+
+}
+
+.third-row {
+
+    animation-name: third-row-animation;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes third-row-animation {
+    0% {
+        transform: scaleY(0);
+    }
+
+    50% {
+        transform: scaleY(0.5);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+
+}

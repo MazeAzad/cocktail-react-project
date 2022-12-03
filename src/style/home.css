@@ -1,0 +1,133 @@
+.homeContainer {
+    position: relative;
+    width: 100%;
+    top: 50px;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(209, 216, 244);
+}
+
+.formContainer {
+    margin: 50px auto;
+    width: fit-content;
+
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border: 0;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.cocktailTitle {
+    width: fit-content;
+    margin: auto;
+}
+
+.noCocktails {
+    position: relative;
+    top: 50px;
+    width: fit-content;
+    margin: auto;
+}
+
+.cocktailList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    width: 1200px;
+    margin: auto;
+}
+
+.cocktail {
+    background-color: white;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.imageContainer {
+    width: 300px;
+    height: 300px;
+
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    width: fit-content;
+    padding: 5px;
+    background-color: rgb(63, 232, 63);
+    border: 0;
+    border-radius: 2px;
+    color: rgb(88, 85, 85);
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1200px) {
+    .cocktailList {
+        width: 661px;
+        margin: auto;
+        gap: 20px;
+    }
+
+
+}
+
+@media only screen and (max-width:840px) {
+
+    .cocktailList {
+        width: 320px;
+        margin: auto;
+        gap: 20px;
+    }
+
+}
+
+@media only screen and (max-width:320px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    input {
+        width: 150px;
+    }
+
+    label {
+        display: block;
+        margin: auto;
+    }
+
+    .imageContainer {
+        width: 200px;
+        height: 200px;
+    }
+
+    .imageContainer img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cocktailInfo {
+        width: 150px;
+    }
+
+    .cocktail {
+        margin: auto;
+    }
+
+    .cocktailList {
+        width: fit-content;
+    }
+
+}

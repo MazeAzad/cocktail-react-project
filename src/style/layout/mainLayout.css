@@ -1,0 +1,96 @@
+ .mainNavbar {
+     display: flex;
+     background-color: white;
+     position: fixed;
+     top: 0;
+     width: 100vw;
+     height: 50px;
+     box-shadow: 1px 1px 1px 1px rgb(101, 101, 101);
+     z-index: 1;
+     justify-content: space-around;
+
+ }
+
+ .body {
+     width: 100vw;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+
+ }
+
+ .show-nav {
+     display: flex;
+ }
+
+ /* .show-home {
+    display: block;
+} */
+
+ .logoContainer {
+     width: 160px;
+     height: 40px;
+
+
+ }
+
+ .logoContainer img {
+     width: 100%;
+     height: 100%;
+
+
+ }
+
+
+ .navItemContainer {
+     display: flex;
+     gap: 20px;
+     margin-left: 200px;
+
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     overflow-x: hidden;
+     width: 100vw;
+     height: 100%;
+ }
+
+ .navLink {
+     text-decoration: none;
+     font-size: 1.3rem;
+     display: block;
+     margin-top: 15px;
+     color: black
+ }
+
+
+ @media only screen and (max-width:480px) {
+     .mainNavbar {
+         justify-content: initial;
+         display: grid;
+         grid-template-columns: 0 0.1fr;
+     }
+ }
+
+ @media only screen and (max-width:320px) {
+
+     .mainNavbar {
+         justify-content: initial;
+         display: grid;
+         gap: 0;
+     }
+
+     .navItemContainer {
+         margin-left: 150px;
+     }
+
+     .logoContainer {
+         width: 100px;
+         margin-right: 0;
+     }
+
+ }
